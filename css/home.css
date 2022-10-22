@@ -157,7 +157,7 @@ body {
 /* Home page */
 
 main {
-    max-width: 86.375rem;
+    max-width: 95rem;
 }
 
 main #hero {
@@ -513,7 +513,7 @@ footer .follow i {
     cursor: pointer;
 }
 
-footer .install .row img{
+footer .install .row img {
     border: 1px solid #088178;
     border-radius: 6px;
 }
