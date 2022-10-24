@@ -21,11 +21,22 @@
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="cart.html"><span class="material-icons">
+                <li id="lg-bag"><a href="cart.html"><span class="material-icons">
                             shopping_bag
                         </span></a></li>
+                <li class="btn-container"><button id="close" class="normal btn-close">
+                        <span class="material-icons md-28">
+                            close
+                        </span>
+                    </button></li>
             </ul>
         </nav>
+        <div class="mobile">
+            <a href="cart.html"><span class="material-icons">
+                    shopping_bag
+                </span></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
     </header>
     <main>
         <section id="hero">
@@ -231,7 +242,8 @@
         <section id="newsletter" class="section-p1 section-m1">
             <div class="newstext">
                 <h4>Regístrese para recibir boletines</h4>
-                <p>Reciba actualizaciones por correo electrónico sobre nuestra última tienda y <span>ofertas especiales.</span></p>
+                <p>Reciba actualizaciones por correo electrónico sobre nuestra última tienda y <span>ofertas
+                        especiales.</span></p>
             </div>
             <div class="form">
                 <input type="mail" placeholder="Your email address">
@@ -290,6 +302,7 @@
             <p>© 2022, PrettyShoes</p>
         </div>
     </footer>
+    <script src="js/home.js" type="module"></script>
 </body>
 
 </html>

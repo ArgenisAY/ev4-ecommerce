@@ -26,6 +26,10 @@
     font-feature-settings: 'liga';
 }
 
+.material-icons.md-28 {
+    font-size: 28px;
+}
+
 :root {
     -primary--color: #222;
 }
@@ -62,7 +66,7 @@ h6 {
 
 p {
     font-size: 16px;
-    color: #465b52;
+    color: #1a1a1a;
     margin: 15px 0 20px 0;
 }
 
@@ -129,6 +133,10 @@ body {
     padding: 0 1.25rem;
 }
 
+#header #navbar .btn-container {
+    display: none;
+}
+
 #header #navbar li a {
     text-decoration: none;
     font-size: 1.25rem;
@@ -154,10 +162,16 @@ body {
     left: 0;
 }
 
+#header .mobile {
+    display: none;
+}
+
 /* Home page */
 
 main {
     max-width: 95rem;
+    margin: 0 auto;
+    width: 100%;
 }
 
 main #hero {
@@ -377,7 +391,7 @@ main #sm-banner .banner-box {
 }
 
 main #sm-banner h4 {
-    color: #808080;
+    color: #3adbd0;
     font-size: 1.25rem;
     font-weight: 300;
 }
@@ -389,7 +403,7 @@ main #sm-banner h2 {
 }
 
 main #sm-banner span {
-    color: #808080;
+    color: #3adbd0;
     font-size: 14px;
     font-weight: 500;
     padding-bottom: 1rem;
@@ -406,6 +420,11 @@ main #sm-banner .banner-box:hover button {
 
 main #sm-banner .banner-box2 {
     background-image: url('../img/home/banner/b12.jpg');
+    /* color: white; */
+}
+
+main #sm-banner .banner-box2 h2 {
+    color: #fff;
 }
 
 main #newsletter {
@@ -529,4 +548,156 @@ footer a:hover {
 
 footer .copyright {
     text-align: center;
+}
+
+/* media query */
+
+@media screen and (max-width: 799px) {
+    .section-p1 {
+        padding: 40px 40px;
+    }
+
+    #header #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: min(75%, 300px);
+        background-color: #f7f7f7;
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.06);
+        padding: 5rem 0 0 .75rem;
+        transition: .3s;
+    }
+
+    #header #navbar.active {
+        right: 0;
+    }
+
+    #header #navbar li {
+        margin-bottom: 1.5rem;
+    }
+
+    #header #navbar #lg-bag {
+        display: none;
+    }
+
+    #header .mobile {
+        display: flex;
+        align-items: center;
+    }
+
+    #header .mobile i,
+    #header .mobile span {
+        color: #1a1a1a;
+        font-size: 24px;
+        padding-left: 20px;
+    }
+
+    #header #navbar .btn-container {
+        display: initial;
+    }
+
+    #header #navbar .btn-container button.btn-close {
+        padding: 0;
+        background-color: #f7f7f7;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+
+    main #hero {
+        height: 60vh;
+        background-position: top 30% right 30%;
+        padding: 0 5rem;
+    }
+
+    main #feature {
+        justify-content: center;
+    }
+
+    main #feature .fe-box {
+        margin: 15px 15px;
+    }
+
+    main #product1 .pro-container {
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+        column-gap: 1.75rem;
+    }
+
+    main #banner {
+        height: 20vh;
+    }
+
+    main #sm-banner {
+        justify-content: center;
+        row-gap: 1.5rem;
+    }
+
+    main #sm-banner .banner-box {
+        height: 30vh;
+    }
+
+    main #newsletter .form {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 477px) {
+    .section-p1 {
+        padding: 20px;
+    }
+
+    #header {
+        padding: 10px 30px;
+    }
+
+    main #hero {
+        padding: 0 20px;
+        background-position: 55%;
+    }
+
+    main #hero button {
+        background-size: cover;
+    }
+
+    main #feature .fe-box {
+        width: 155px;
+        margin: 0 0 15px 0;
+    }
+
+    main #feature {
+        justify-content: space-between;
+    }
+
+    main #product1 .pro {
+        width: 85%;
+    }
+
+    main #banner {
+        height: 40vh;
+    }
+    
+    main #sm-banner .banner-box {
+        min-width: 100%;
+        padding: 0;
+        width: 100%;
+        height: 40vh;
+        padding-left: .5rem;
+        padding-right: .5rem;
+        text-align: left;
+    }
+
+    main #sm-banner h2 {
+        font-size: 1.5rem;
+    }
+
+    main #newsletter .form {
+        width: 100%;
+    }
 }
