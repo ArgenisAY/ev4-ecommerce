@@ -59,6 +59,11 @@ h4 {
     color: var(-primary--color);
 }
 
+a.normal {
+    text-decoration: none;
+    color: #ed7272;
+}
+
 h6 {
     font-weight: 700;
     font-size: 16px;
@@ -119,8 +124,8 @@ body {
 }
 
 .logo {
-    width: 6rem;
-    height: 4rem;
+    width: 4.5rem;
+    height: auto;
 }
 
 #header #navbar {
@@ -291,6 +296,7 @@ main #product1 .pro:hover {
 
 main #product1 .pro img {
     width: 100%;
+    height: 50%;
     border-radius: 1.25rem;
 }
 
@@ -316,7 +322,7 @@ main #product1 .pro .des i {
 }
 
 main #product1 .pro .des h4 {
-    padding-top: 7px;
+    padding-top: 14px;
     font-size: 15px;
     font-weight: 700;
     color: #ed7272;
@@ -638,6 +644,7 @@ footer .copyright {
 
 #prodetails .single-pro-details h2 {
     font-size: 32px;
+    color: #ed7272;
 }
 
 #prodetails .single-pro-details select {
